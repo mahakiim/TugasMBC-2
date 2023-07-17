@@ -34,4 +34,17 @@ while True:
         upah_per_jam = 10000
     else:
         print("Golongan tidak valid!")
+     if jam_kerja > 48:
+        uang_lembur = (jam_kerja - 48) * 4000
+    else:
+        uang_lembur = 0
+
+    gaji = (jam_kerja * upah_per_jam) + uang_lembur
+
+    print("Nama karyawan:", nama_karyawan)
+    print("Gaji yang diterima: Rp.", gaji)
+
+    ulangi = input("Apakah Anda ingin menghitung lagi? (ya/tidak): ")
+    if ulangi.lower() != "ya":
+        break
 
