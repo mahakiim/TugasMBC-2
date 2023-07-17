@@ -13,3 +13,25 @@ Jika jam kerja karyawan lebih dari 48 jam per minggu maka akan mendapat uang lem
 Jika jam kerja kurang dari 48 jam maka pegawai tidak akan mendapat uang lembur. Perhitungan gaji pegawai adalah upah + uang lembur.
 Input berupa nama karyawan, golongan dan jam kerja.
 Outputnya adalah nama karyawan dan gaji yang diterima.'''
+
+while True:
+
+    print("===========TUGAS MBC SOAL NO 2==========")
+    print("========MENGHITUNG GAJI KARYAWAN========")
+    print("============by KELOMPOK 1 GIS===========")
+
+    nama_karyawan = input("Masukkan nama karyawan: ")
+    golongan = input("Masukkan golongan (A/B/C/D): ").lower()
+    jam_kerja = int(input("Masukkan jam kerja: "))
+
+    if golongan == 'a':
+        upah_per_jam = 5000
+    elif golongan == 'b':
+        upah_per_jam = 7000
+    elif golongan == 'c':
+        upah_per_jam = 8000
+    elif golongan == 'd':
+        upah_per_jam = 10000
+    else:
+        print("Golongan tidak valid!")
+
